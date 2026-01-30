@@ -20,7 +20,7 @@ LocalFramework is a local automation application for businesses, designed to sca
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/ChiefVenzox/LocalFramework.git
+    git clone https://github.com/ChiefVenzox/Localautomation.git
     cd LocalFramework
     ```
 
