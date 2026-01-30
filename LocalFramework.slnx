@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../visualstframework/Venzox.Validation/Venzox.Validation.csproj" />
+  <Project Path="LocalFramework/LocalFramework.csproj" />
+</Solution>

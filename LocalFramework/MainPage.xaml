@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.MAUI.Controls;assembly=ZXing.Net.MAUI"
+             x:Class="LocalFramework.MainPage"
+             Title="QR Code Scanner">
+
+    <Grid RowDefinitions="*,Auto,Auto">
+        <zxing:CameraBarcodeReaderView Grid.Row="0"
+                                       x:Name="barcodeReaderView"
+                                       IsDetecting="True"
+                                       IsTorchOn="False"
+                                       ResultFound="BarcodeReaderView_OnResultFound" />
+
+        <Label Grid.Row="1"
+               Text="Scan Result:"
+               FontSize="Medium"
+               Margin="10" />
+        <Label Grid.Row="2"
+               x:Name="resultLabel"
+               Text="No barcode scanned yet"
+               FontSize="Small"
+               Margin="10,0,10,10"
+               LineBreakMode="WordWrap" />
+    </Grid>
+
+</ContentPage>
